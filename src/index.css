@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+body {
+  background: #131417;
+  font-family: "Poppins", sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+  @keyframes border-animation {
+    0% {
+      border-color: #4fcf70;
+    }
+    25% {
+      border-color: #fad648;
+    }
+    50% {
+      border-color: #12bcfe;
+    }
+    75% {
+      border-color: #a767e5;
+    }
+    100% {
+      border-color: #44ce7b;
+    }
+  }
+  
+  .mixingColor {
+    animation: border-animation 3s linear infinite;
+  }
+
+/* .ͼ1 .cm-gutter{
+  background-color: rgba(102, 153, 255, 0.043);
+  padding: 2px 0 6px 0px;
+} */
+
+.CodeMirror{
+  height: 340px !important;
+}
+
+.CodeMirror-gutters{
+  background:#1d1e22;
+}
+
+.CodeMirror{
+  padding-top: 0 !important;
+}
+
